@@ -26,7 +26,7 @@ function setup() {
 	m1_slider = createSlider(1, 100, 10, 10)
 	m2_slider = createSlider(1, 100, 10, 10)
 	damp_slider = createSlider(0, 1, 0.1, 0.1)
-
+	// a1slider.changed(draw);
 	a1 = PI / 2;
 	a2 = PI / 2;
 	cx = width / 2;
@@ -34,12 +34,22 @@ function setup() {
 	buffer = createGraphics(width, height);
 	buffer.background(175);
 	buffer.translate(cx, cy);
+
 }
 
 function draw() {
 	background(175);
 	imageMode(CORNER);
 	image(buffer, 0, 0, width, height);
+
+	// g = g_slider.value();
+	// a1 = a1slider.value();
+	// a2 = a2slider.value();
+	// r1 = r1_slider.value();
+	// r2 = r2_slider.value();
+	// m1 = m1_slider.value();
+	// m2 = m2_slider.value();
+	// damp_factor = damp_slider.value();
 
 	let num1 = -g * (2 * m1 + m2) * sin(a1);
 	let num2 = -m2 * g * sin(a1 - 2 * a2);
