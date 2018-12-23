@@ -13,19 +13,19 @@ let py2 = -1;
 let cx, cy;
 
 let buffer;
-let a1slider, a2slider, g_slider, r1slider, r2slider, m1slider, m2slider, damp_slider;
+// let a1slider, a2slider, g_slider, r1slider, r2slider, m1slider, m2slider, damp_slider;
 
 function setup() {
-	createCanvas(900, 900);
+	createCanvas(900, 500);
 	pixelDensity(1);
-	a1slider = createSlider(0, PI, PI / 2, PI / 32)
-	a2slider = createSlider(0, PI, PI / 2, PI / 32)
-	g_slider = createSlider(0, 10, 1, 1)
-	r1_slider = createSlider(1, 100, 10, 10)
-	r2_slider = createSlider(1, 100, 10, 10)
-	m1_slider = createSlider(1, 100, 10, 10)
-	m2_slider = createSlider(1, 100, 10, 10)
-	damp_slider = createSlider(0, 1, 0.1, 0.1)
+	// a1slider = createSlider(0, PI, PI / 2, PI / 32)
+	// a2slider = createSlider(0, PI, PI / 2, PI / 32)
+	// g_slider = createSlider(0, 10, 1, 1)
+	// r1_slider = createSlider(1, 100, 10, 10)
+	// r2_slider = createSlider(1, 100, 10, 10)
+	// m1_slider = createSlider(1, 100, 10, 10)
+	// m2_slider = createSlider(1, 100, 10, 10)
+	// damp_slider = createSlider(0, 1, 0.1, 0.1)
 	// a1slider.changed(draw);
 	a1 = PI / 2;
 	a2 = PI / 2;
@@ -33,7 +33,7 @@ function setup() {
 	cy = height / 2;
 	buffer = createGraphics(width, height);
 	buffer.background(175);
-	buffer.translate(cx, cy);
+	buffer.translate(cx, 200);
 
 }
 
@@ -67,7 +67,7 @@ function draw() {
 	let a2_a = (num1 * (num2 + num3 + num4)) / den;
 
 	// translate(500, 500);
-	translate(cx, cy);
+	translate(cx, 200);
 	stroke(0);
 	strokeWeight(2);
 
