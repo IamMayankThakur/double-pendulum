@@ -16,7 +16,7 @@ let buffer;
 // let a1slider, a2slider, g_slider, r1slider, r2slider, m1slider, m2slider, damp_slider;
 
 function setup() {
-	createCanvas(900, 500);
+	createCanvas(windowWidth, windowHeight);
 	pixelDensity(1);
 	// a1slider = createSlider(0, PI, PI / 2, PI / 32)
 	// a2slider = createSlider(0, PI, PI / 2, PI / 32)
